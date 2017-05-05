@@ -1,0 +1,65 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[affil-it]{authblk} 
+\usepackage{etoolbox}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{float}
+
+\makeatletter
+\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{20}{19.2}\selectfont\@title}{}{}
+\makeatother
+
+\renewcommand\Authfont{\fontsize{16}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{12}{10.8}\itshape}
+
+\title{\textbf{Assignment 2}} 
+\author{Pavan R Hebbar - 130010046}
+\usepackage{graphicx}
+\begin{document}
+\maketitle
+\newpage
+\section{Question 1:}
+
+The equation for normalised sheath potential is:
+
+\begin{equation}
+ \frac{d^2V}{d\eta^2} = \sqrt{\left(1+\frac{2V}{M_{se}^2}\right)} - e^{-V}
+\end{equation}
+
+The equation for the corresponding electric field is
+\begin{equation}
+ \frac{dV}{d\eta} = \sqrt{2M_{se}^2\left(\sqrt{\left(1+\frac{2V}{M_{se}^2}\right)}-1\right) + 2e^{-V} + \epsilon^2 - 2}
+\end{equation}
+
+For a neutral wall $M_{se}^2 = 1$
+
+\section{Question 2:}
+\subsection{Bohm's approcimation}
+For $V<<1$
+\begin{equation}
+ \frac{d^2V}{d\eta^2} = V\left(1-\frac{1}{M_{se}^2}\right)
+\end{equation}
+and
+\begin{equation}
+ \frac{dV}{d\eta} = \sqrt{\left(1 - \frac{1}{M_{se}^2}\right)V^2 + \epsilon^2}
+\end{equation}
+For a neutral wall $M_{se}^2 = 1$, implying $d^2V/d\eta = 0$ and $dV/d\eta = \epsilon$
+
+\section{Question 3:}
+The plots of normalised sheath potential are shown below for the 3 cases. $\epsilon = 0.01$ has been used.
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale = 0.5]{Gen_Vnorm.png}
+\end{figure}
+
+Plots of normalised electric field:
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale = 0.5]{Gen_Enorm.png}
+\end{figure}
+
+\section{Question 4:}
+
+
+
+\end{document}

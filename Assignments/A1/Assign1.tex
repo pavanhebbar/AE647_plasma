@@ -1,0 +1,38 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[affil-it]{authblk} 
+\usepackage{etoolbox}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{float}
+
+\makeatletter
+\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{20}{19.2}\selectfont\@title}{}{}
+\makeatother
+
+\renewcommand\Authfont{\fontsize{16}{14.4}\selectfont}
+\renewcommand\Affilfont{\fontsize{12}{10.8}\itshape}
+
+\title{\textbf{Assignment 1}} 
+\author{Pavan R Hebbar - 130010046 \\ 
+jain}
+\usepackage{graphicx}
+\begin{document}
+\maketitle
+\newpage
+
+\section{Cauchy Kernal}
+In the first part of the assignment the vortex sheet is assumed to be a set of vortices. In order to show the evolution of the
+of the vortex sheet, plots were made at time instances $2$s, $4$s, $6$s and $8$s. The results were also analysed with respect
+to the number of vortices that were assumed. All results were simulated for $50$, $100$ and $200$ vortices. The results
+obtained are shown below:
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale = 0.5]{Const_dx_200_50.png}
+ \caption{$50$ vortices for $2$s}
+\end{figure}
+
+
+
+
+
+\end{document}
